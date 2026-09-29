@@ -1,0 +1,24 @@
+name: Test Travel Website
+
+on:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get project files
+        uses: actions/checkout@v4
+
+      - name: Check HTML file
+        run: test -f index.html
+
+      - name: Check CSS file
+        run: test -f style.css
+
+      - name: Check JavaScript file
+        run: test -f script.js
+
+      - name: Check image folder
+        run: test -d imge
