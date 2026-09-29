@@ -1,7 +1,6 @@
 name: Test Travel Website
 
 on:
-  
   pull_request:
 
 jobs:
@@ -23,5 +22,3 @@ jobs:
 
       - name: Check image folder
         run: test -d imge
-
-    
